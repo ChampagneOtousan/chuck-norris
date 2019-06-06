@@ -1,6 +1,5 @@
 class ChuckJokes
   def help
-
   end
 
   def get_joke_by_id(id)
