@@ -1,9 +1,11 @@
 class ChuckJokes
+  require "chuck_norris"
+
   def help
   end
 
   def get_joke_by_id(id)
-    http://api.icndb.com/jokes/$jokenumber
+    return ChuckNorris::JokeFinder.find_joke(id)
 
   end
 
@@ -12,6 +14,7 @@ class ChuckJokes
   end
 
   def random
+    return ChuckNorris::JokeFinder.get_joke
 
   end
 end
